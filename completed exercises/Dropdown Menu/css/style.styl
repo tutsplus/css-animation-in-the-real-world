@@ -1,0 +1,19 @@
+.dropdown
+  display: inline-block
+  nav
+    max-height: 0
+    overflow: hidden
+    transition: all 600ms ease
+    a
+      display: block
+  &:hover
+    nav
+      max-height: 999px
+
+a
+  display: inline-block
+  background: lighten(blue, 20%)
+  color: white
+  text-decoration: none
+  padding: 1em 2em
+  font-family: sans-serif

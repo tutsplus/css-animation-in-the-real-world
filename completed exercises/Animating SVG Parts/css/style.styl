@@ -1,0 +1,23 @@
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(359deg)
+
+#petals
+  animation: spin 6s linear infinite
+  transform-origin: center
+
+@keyframes wave
+  0%, 100%
+    transform: rotate(0deg)
+  50%
+    transform: rotate(3deg)
+
+#leaf
+  animation: wave 400ms linear infinite
+  transform-origin: bottom left
+
+svg
+  animation: wave 4s linear infinite
+  transform-origin: bottom

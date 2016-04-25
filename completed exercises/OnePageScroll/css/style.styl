@@ -1,0 +1,27 @@
+@import 'onepagescroll.css'
+
+html
+  color: white
+  text-align: center
+  font-family: sans-serif
+
+section
+  background: lighten(red, 40%)
+  &:nth-child(2)
+    background: lighten(blue, 30%)
+
+.onepage-pagination li a.active:before
+  border-color: white
+.onepage-pagination li a:before
+  background-color: white
+
+.active
+  h1
+    animation: slideInFromLeft 2s forwards
+
+
+@keyframes slideInFromLeft
+  0%
+    margin-left: -100%
+  100%
+    margin-left: 0

@@ -1,0 +1,61 @@
+#petals {
+  -webkit-animation: spin 6s linear infinite;
+          animation: spin 6s linear infinite;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+#leaf {
+  -webkit-animation: wave 400ms linear infinite;
+          animation: wave 400ms linear infinite;
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+svg {
+  -webkit-animation: wave 4s linear infinite;
+          animation: wave 4s linear infinite;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes wave {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}
+@keyframes wave {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}

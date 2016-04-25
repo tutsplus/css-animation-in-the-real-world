@@ -1,0 +1,38 @@
+@import 'onepagescroll.css';
+html {
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+}
+section {
+  background: #f66;
+}
+section:nth-child(2) {
+  background: #4d4dff;
+}
+.onepage-pagination li a.active:before {
+  border-color: #fff;
+}
+.onepage-pagination li a:before {
+  background-color: #fff;
+}
+.active h1 {
+  -webkit-animation: slideInFromLeft 2s forwards;
+          animation: slideInFromLeft 2s forwards;
+}
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
